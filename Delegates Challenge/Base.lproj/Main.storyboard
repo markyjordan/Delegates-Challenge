@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Text Fields View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Delegates_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TextFieldsViewController" customModule="Delegates_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,12 @@
                         <color key="backgroundColor" red="0.82906186179175889" green="0.22376335602704522" blue="0.37021758271330352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textField1" destination="AJn-6e-vPj" id="chL-pf-fcl"/>
+                        <outlet property="textField2" destination="uAy-35-BCO" id="epP-lv-kaT"/>
+                        <outlet property="textField3" destination="9RM-8g-YKT" id="DUk-8h-voo"/>
+                        <outlet property="textFieldSwitch" destination="TQR-AI-Fi2" id="Ph6-gi-H9b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

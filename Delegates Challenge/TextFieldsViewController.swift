@@ -30,6 +30,13 @@ class TextFieldsViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // set the three delegates
+        self.textField1.delegate = zipCodeDelegate
+        self.textField2.delegate = cashDelegate
+        self.textField3.delegate = self
+        
+        // set the UISwitch to off
+        self.textFieldSwitch.isOn = false
     }
     
     // MARK: Text Field Delegate Methods

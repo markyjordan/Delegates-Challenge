@@ -6,6 +6,7 @@
 //  Copyright © 2020 Marky Jordan. All rights reserved.
 //
 
+
 import UIKit
 
 // MARK: TextFieldsViewController: UIViewController, UITextFieldDelegate
@@ -14,7 +15,10 @@ class TextFieldsViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Outlets
     
-    
+    @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var textField3: UITextField!
+    @IBOutlet weak var textFieldSwitch: UISwitch!
     
     // MARK: Text Field Delegate Objects
     

@@ -22,8 +22,9 @@ class TextFieldsViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Text Field Delegate Objects
     
-   
-    
+    let zipCodeDelegate = ZipCodeTextFieldDelegate()
+    let cashDelegate = CashTextFieldDelegate()
+    let lockableDelegate = LockableTextFieldDelegate()
     
     // MARK: Life Cycle
     

@@ -40,7 +40,14 @@ class TextFieldsViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: Text Field Delegate Methods
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return self.textFieldSwitch.isOn
+    }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 }
 

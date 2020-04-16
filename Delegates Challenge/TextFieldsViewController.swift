@@ -48,6 +48,15 @@ class TextFieldsViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
+    // MARK: Actions
+    
+    @IBAction func toggleTheTextEditor(_ sender: AnyObject) {
+        
+        if !(sender as! UISwitch).isOn {
+            self.textField3.resignFirstResponder()
+        }
+    }
 
 }
 

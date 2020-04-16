@@ -57,6 +57,5 @@ class TextFieldsViewController: UIViewController, UITextFieldDelegate {
             self.textField3.resignFirstResponder()
         }
     }
-
 }
 

@@ -15,47 +15,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJn-6e-vPj">
-                                <rect key="frame" x="16" y="347" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJn-6e-vPj">
+                                <rect key="frame" x="20" y="347" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uAy-35-BCO">
-                                <rect key="frame" x="16" y="389" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uAy-35-BCO">
+                                <rect key="frame" x="20" y="389" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-8g-YKT">
-                                <rect key="frame" x="16" y="431" width="286" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-8g-YKT">
+                                <rect key="frame" x="20" y="431" width="278" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQR-AI-Fi2">
-                                <rect key="frame" x="310" y="431" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQR-AI-Fi2">
+                                <rect key="frame" x="306" y="431" width="51" height="31"/>
                                 <connections>
-                                    <action selector="toggleTheTextEditor:" destination="BYZ-38-t0r" eventType="valueChanged" id="WoO-f9-diw"/>
+                                    <action selector="toggleTheTextEditor:" destination="BYZ-38-t0r" eventType="valueChanged" id="di5-DL-DSA"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delegate Challenge Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS2-0J-urd">
-                                <rect key="frame" x="16" y="175" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegate Challenge Exercise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS2-0J-urd">
+                                <rect key="frame" x="20" y="177" width="335" height="31.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.82906186179175889" green="0.22376335602704522" blue="0.37021758271330352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bS2-0J-urd" firstAttribute="trailing" secondItem="TQR-AI-Fi2" secondAttribute="trailing" id="5H5-Iv-Fup"/>
+                            <constraint firstItem="bS2-0J-urd" firstAttribute="leading" secondItem="9RM-8g-YKT" secondAttribute="leading" id="DJ2-XJ-dXa"/>
+                            <constraint firstItem="uAy-35-BCO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GQ4-oc-amb"/>
+                            <constraint firstItem="AJn-6e-vPj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="347" id="H8d-xj-Rt2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AJn-6e-vPj" secondAttribute="trailing" constant="20" id="Rnd-f4-m2v"/>
+                            <constraint firstItem="TQR-AI-Fi2" firstAttribute="leading" secondItem="9RM-8g-YKT" secondAttribute="trailing" constant="8" id="Xdb-u1-wBh"/>
+                            <constraint firstItem="bS2-0J-urd" firstAttribute="trailing" secondItem="AJn-6e-vPj" secondAttribute="trailing" id="hbq-fj-T0n"/>
+                            <constraint firstItem="9RM-8g-YKT" firstAttribute="top" secondItem="uAy-35-BCO" secondAttribute="bottom" constant="8" id="mPL-W9-9fF"/>
+                            <constraint firstItem="uAy-35-BCO" firstAttribute="top" secondItem="AJn-6e-vPj" secondAttribute="bottom" constant="8" id="nyP-B7-uCN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uAy-35-BCO" secondAttribute="trailing" constant="20" id="rYB-jk-7tR"/>
+                            <constraint firstItem="bS2-0J-urd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="tgC-FB-0D2"/>
+                            <constraint firstItem="AJn-6e-vPj" firstAttribute="centerX" secondItem="uAy-35-BCO" secondAttribute="centerX" id="yb8-zm-huk"/>
+                            <constraint firstItem="bS2-0J-urd" firstAttribute="leading" secondItem="AJn-6e-vPj" secondAttribute="leading" id="zB7-EM-YTJ"/>
+                            <constraint firstItem="AJn-6e-vPj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zOo-wf-ftj"/>
+                            <constraint firstItem="9RM-8g-YKT" firstAttribute="top" secondItem="TQR-AI-Fi2" secondAttribute="top" id="zfe-wI-xeZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="textField1" destination="AJn-6e-vPj" id="chL-pf-fcl"/>
-                        <outlet property="textField2" destination="uAy-35-BCO" id="epP-lv-kaT"/>
-                        <outlet property="textField3" destination="9RM-8g-YKT" id="DUk-8h-voo"/>
-                        <outlet property="textFieldSwitch" destination="TQR-AI-Fi2" id="Ph6-gi-H9b"/>
+                        <outlet property="textField1" destination="AJn-6e-vPj" id="8h9-C4-2u3"/>
+                        <outlet property="textField2" destination="uAy-35-BCO" id="S5j-c4-vrH"/>
+                        <outlet property="textField3" destination="9RM-8g-YKT" id="D5t-vT-xGJ"/>
+                        <outlet property="textFieldSwitch" destination="TQR-AI-Fi2" id="GH1-8W-dlt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
